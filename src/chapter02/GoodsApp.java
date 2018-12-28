@@ -12,6 +12,8 @@ public class GoodsApp {
 		goods.setPrice(400000);
 		goods.setCountStock(30);
 		goods.setCountSold(50);
+		goods.showInfo();
+		System.out.println(goods.calcDiscountPrice(0.3f));
 		
 		System.out.println("상품이름: "+goods.getName()+
 							",가격: "+goods.getPrice()+

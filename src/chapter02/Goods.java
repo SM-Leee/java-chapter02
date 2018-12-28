@@ -39,13 +39,22 @@ public class Goods {
 	public void setCountStock(int countStock) {
 		this.countStock = countStock;
 	}
-	public int getCountSold() {
+	public int getCountSold() {//매개변수는 없고, 리턴값이 있는 함수
 		return countSold;
 	}
-	public void setCountSold(int countSold) {
+	public void setCountSold(int countSold) {//매개변수는 있고, 리턴값이 없는 함수
 		this.countSold = countSold;
 	}
 	
+	public void showInfo() {//매개변수도 없고, 리턴값도 없는 함수
+		System.out.println("상품이름"+name);
+		System.out.println("가격"+price);
+		System.out.println("재고량"+countStock);
+		System.out.println("판매량"+countSold);
+	}
+	public int calcDiscountPrice(float discountRate) {//매개변수가 있고, 리턴값도 있는 함수
+		return price - (int)(price * discountRate);
+	}
 	
 	
 }
