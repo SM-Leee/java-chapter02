@@ -14,63 +14,50 @@ public class TV {
 	}
 
 	public void power(boolean on) {
-		if(on) {
-			this.power=true;
-		}else {
-			this.power=false;
-		}
+		power = on;
 	}
 
 	public void channel(int channel) {
-		if(this.power) {
-			this.channel = channel;
-		}else {
-			System.out.println("TV On...Please");
+		if(!power) {
+
 		}
+		if(channel >50) {
+			channel = 0;
+		}
+		if(channel <0) {
+			channel =50;
+		}
+		this.channel =channel;
 	}
 
 	public void channel(boolean up) {
-		if(this.power) {
-			if(up) {
-				this.channel++;			
-				if(this.channel==51) {
-					this.channel=0;
-				}
-			}else {
-				this.channel--;
-				if(this.channel==-1) {
-					this.channel=50;
-				}
-			}
+
+		if(up) {
+			this.channel++;			
 		}else {
-			System.out.println("TV On...Please");
+			this.channel--;
 		}
+		channel(channel);
 	}
 
 	public void volume(int volume) {
-		if(this.power) {
-			this.volume = volume;
-		}else {
-			System.out.println("TV On...Please");
+		if(volume>50) {
+			volume=0;
 		}
+		if(volume<0) {
+			volume=50;
+		}
+		this.volume = volume;
 	}
 
 	public void volume(boolean up) {
-		if(this.power) {
-			if(up) {
-				this.volume++;			
-				if(this.volume==51) {
-					this.volume=0;
-				}
-			}else {
-				this.volume--;
-				if(this.volume==-1) {
-					this.volume=50;
-				}
-			}
+
+		if(up) {
+			volume++;			
 		}else {
-			System.out.println("TV On...Please");
+			volume--;
 		}
+		volume(volume);
 	}
 
 	public void status() {
