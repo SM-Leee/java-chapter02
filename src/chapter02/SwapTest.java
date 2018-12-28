@@ -48,6 +48,12 @@ public class SwapTest {
 		int temp = i.value;
 		i.value=j.value;
 		j.value=temp;
+		
+		//Integer 객체는 불변 객체다. 오토박싱(AutoBoxing) : 자동으로 객체를 만들어준다.
+		//Integer i2 = new Integer(10);
+		Integer i2 = 10;
+		//int j2 = i2.intValue();
+		int j2 = i2; // 자동으로 AutoUnBoxing을 해줌
 	}
 	//같이 이름의 함수가 있는데 안에 있는 변수가 다르거나, return 값의 유무에 따라 다른것이 : 오버로딩이라고 한다.
 

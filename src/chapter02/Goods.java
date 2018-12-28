@@ -5,11 +5,11 @@ public class Goods {
 	private String name;
 	private int price;
 	private int countStock;
-	private int countSold;
+	private int countSold;	//인스턴스 변수
 	//인스턴스 변수 - heap영역 안에서 하나당 4btye를 할당 받는다.
 	//private로 하면 다른 class에서 사용할수 없다. 하지만 javabean을 통해서 사용할 수 있다.
 	
-	public static int countOfGoods;
+	public static int countOfGoods; //class 변수
 	
 	public Goods(){
 		//Goods.countOfGoods++; 정석 코드!
