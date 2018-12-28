@@ -8,6 +8,10 @@ public class MainApp {
 		point.setY(200);
 		
 		point.show();
+		
+		Point point2 = new Point(50, 50);
+		point2.show();
+		point2.show(false);
 
 	}
 

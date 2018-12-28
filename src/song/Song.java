@@ -9,6 +9,24 @@ public class Song {
 	private int year;
 	private int track;
 	
+	//생성자의 오버로딩
+	public Song() {//default 생성자
+		
+	}
+	public Song(String title, String artist) {
+		this(title, artist,null,null,0,0);
+		//초기화 코드를 하나로 바꿀수 있다.
+	}
+	
+	public Song(String title, String artist, String album, String composer, int year, int track) {
+		this.title = title;
+		this.artist = artist;
+		this.album = album;
+		this.composer = composer;
+		this.year = year;
+		this.track = track;
+	}
+	
 	public String getTitle() {
 		return title;
 	}
