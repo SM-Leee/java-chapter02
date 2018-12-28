@@ -18,6 +18,10 @@ public class GoodsApp {
 							",재고개수: "+goods.getCountStock()+
 							",팔린개수: "+goods.getCountSold());
 		
+		Goods goods2 = new Goods();
+		Goods goods3 = new Goods();
+		
+		
 	}
 
 }
