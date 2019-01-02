@@ -12,7 +12,18 @@ public class MainApp {
 		Point point2 = new Point(50, 50);
 		point2.show();
 		point2.show(false);
+		
+		Point p3 = new ColorPoint();
+		p3.setX(100);
+		p3.setY(50);
+		((ColorPoint)p3).setColor("Red");
+		p3.show();
+		p3.show(false);
 
 	}
-
+	
+	public static void drawPoint(Point point) {
+		point.show();
+	}
+	
 }
