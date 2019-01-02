@@ -45,6 +45,9 @@ public class MainApp {
 		Drawable circle = new Circle();
 		draw(circle);
 		//drawCircle(circle);
+		
+		GraphicString gs = new GraphicString("Hello");
+		draw(gs);
 
 	}
 	
