@@ -1,4 +1,13 @@
-package paint;
+package com.duzone.paint.main;
+
+import com.duzone.paint.i.Drawable;
+import com.duzone.paint.point.ColorPoint;
+import com.duzone.paint.point.Point;
+import com.duzone.paint.shape.Circle;
+import com.duzone.paint.shape.Rect;
+import com.duzone.paint.shape.Shape;
+import com.duzone.paint.shape.Triangle;
+import com.duzone.paint.text.GraphicString;
 
 public class MainApp {
 
@@ -49,6 +58,20 @@ public class MainApp {
 		GraphicString gs = new GraphicString("Hello");
 		draw(gs);
 
+		//연산자 instanceof 테스트
+		Shape s = new Circle();
+		System.out.println(s instanceof Shape);
+		System.out.println(s instanceof Circle);
+		System.out.println(s instanceof Rect);
+		System.out.println(s instanceof Drawable);
+		
+		Circle c = (Circle)s;
+		System.out.println(c instanceof Circle);
+		System.out.println(c instanceof Shape);
+		System.out.println(c instanceof Object);
+		///System.out.println(c instanceof Rect);
+		//에러 : 계층관계가 아닌 경우에는 연산을 할 수 없음
+		
 	}
 	
 	public static void draw(Drawable drawable) {

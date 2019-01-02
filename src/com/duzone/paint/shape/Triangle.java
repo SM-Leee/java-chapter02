@@ -1,4 +1,4 @@
-package paint;
+package com.duzone.paint.shape;
 
 public class Triangle extends Shape{
 	//private Point[] p1 = new Point[3];
