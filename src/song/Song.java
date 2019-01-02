@@ -8,16 +8,17 @@ public class Song {
 	private String composer;
 	private int year;
 	private int track;
-	
-	//생성자의 오버로딩
-	public Song() {//default 생성자
-		
+
+	// 생성자의 오버로딩
+	public Song() {// default 생성자
+
 	}
+
 	public Song(String title, String artist) {
-		this(title, artist,null,null,0,0);
-		//초기화 코드를 하나로 바꿀수 있다.
+		this(title, artist, null, null, 0, 0);
+		// 초기화 코드를 하나로 바꿀수 있다.
 	}
-	
+
 	public Song(String title, String artist, String album, String composer, int year, int track) {
 		this.title = title;
 		this.artist = artist;
@@ -26,54 +27,58 @@ public class Song {
 		this.year = year;
 		this.track = track;
 	}
-	
+
 	public String getTitle() {
 		return title;
 	}
+
 	public void setTitle(String title) {
 		this.title = title;
 	}
+
 	public String getArtist() {
 		return artist;
 	}
+
 	public void setArtist(String artist) {
 		this.artist = artist;
 	}
+
 	public String getAlbum() {
 		return album;
 	}
+
 	public void setAlbum(String album) {
 		this.album = album;
 	}
+
 	public String getComposer() {
 		return composer;
 	}
+
 	public void setComposer(String composer) {
 		this.composer = composer;
 	}
+
 	public int getYear() {
 		return year;
 	}
+
 	public void setYear(int year) {
 		this.year = year;
 	}
+
 	public int getTrack() {
 		return track;
 	}
+
 	public void setTrack(int track) {
 		this.track = track;
 	}
 
 	public void show() {
 		System.out.println(
-						artist+" "+
-						title+" ("+
-						album+", "+
-						year+", "+
-						track+"번 track, "+
-						composer+" 작곡 )");
+				artist + " " + title + " (" + album + ", " + year + ", " + track + "번 track, " + composer + " 작곡 )");
 	}
-
-
 
 }

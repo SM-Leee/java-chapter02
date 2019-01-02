@@ -1,6 +1,6 @@
 package paint;
 
-public abstract class Shape {
+public abstract class Shape implements Drawable{
 	
 	private String lineColor;
 	private String fillColor;
@@ -18,6 +18,5 @@ public abstract class Shape {
 		this.fillColor = fillColor;
 	}
 	
-	public abstract void draw();
-
+	//public abstract void draw();
 }
