@@ -23,14 +23,28 @@ public class MainApp {
 		//p3.show(false);
 		drawPoint(p3);
 		
-		Shape triangle = new Triangle();
-		drawShape(triangle);
+		Point p4 = new ColorPoint(200, 100, "yello");
+		drawPoint(p4);
 		
-		Shape rect = new Rect();
-		drawShape(rect);
+		Shape triangle = new Triangle();
+		triangle.setLineColor("Black");
+		
+		//down cating -> 명시적으로(Exlicity)
+		//Triangle t1 = (Triangle) triangle;
+		((Triangle)triangle).setX1(20);
+		
+		drawShape(triangle);
+		//drawTriangle(triangle);
+		
+		//up casting -> 암시적(Implicity)
+		Rect rect = new Rect();
+		Shape r1 = rect;
+		drawShape(r1);
+		//drawRect(rect);
 		
 		Shape circle = new Circle();
 		drawShape(circle);
+		//drawCircle(circle);
 
 	}
 	
