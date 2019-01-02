@@ -45,6 +45,7 @@ public class MainApp {
 	/*
 	 * public static void drawTriangle(Triangle triangle) { triangle.draw(); }
 	 * public static void drawRect(Rect rect) { rect.draw(); }
+	 * public static void drawCircle(Circle circle){ circle.draw(); }
 	 */
 	
 	
