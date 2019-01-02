@@ -1,7 +1,5 @@
 package exception;
 
-import java.io.IOException;
-
 public class MyClassTest {
 
 	public static void main(String[] args) {
@@ -9,7 +7,7 @@ public class MyClassTest {
 		
 		try {
 			mc.dangerMethod();
-		} catch (IOException e) {
+		} catch (MyException e) {
 			System.out.println("error : "+e);
 		}
 
